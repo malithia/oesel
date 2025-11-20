@@ -1,0 +1,1397 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2025/6/untitled-ontology-59/"
+     xml:base="http://www.semanticweb.org/user/ontologies/2025/6/untitled-ontology-59/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oesel-ontology="http://example.org/oesel-ontology#">
+    <owl:Ontology rdf:about="http://example.org/oesel-ontology">
+        <owl:versionIRI rdf:resource="http://example.org/oesel-ontology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/oesel-ontology#hasArousal -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/oesel-ontology#hasArousal">
+        <rdfs:domain rdf:resource="http://example.org/oesel-ontology#EmotionConcept"/>
+        <rdfs:range rdf:resource="http://example.org/oesel-ontology#Arousal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/oesel-ontology#hasEnglishLabel -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/oesel-ontology#hasEnglishLabel">
+        <rdfs:domain rdf:resource="http://example.org/oesel-ontology#EmotionConcept"/>
+        <rdfs:range rdf:resource="http://example.org/oesel-ontology#EnglishLabel"/>
+        <rdfs:label>hasEnglishLabel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/oesel-ontology#hasIntensity -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/oesel-ontology#hasIntensity">
+        <rdfs:domain rdf:resource="http://example.org/oesel-ontology#EmotionConcept"/>
+        <rdfs:range rdf:resource="http://example.org/oesel-ontology#Intensity"/>
+        <rdfs:label>hasIntensity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/oesel-ontology#hasPlutchikPrimaryCategory -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/oesel-ontology#hasPlutchikPrimaryCategory">
+        <rdfs:domain rdf:resource="http://example.org/oesel-ontology#EmotionConcept"/>
+        <rdfs:range rdf:resource="http://example.org/oesel-ontology#PlutchikPrimaryCategory"/>
+        <rdfs:label>hasPlutchikPrimaryCategory</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/oesel-ontology#hasSinhalaLabel -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/oesel-ontology#hasSinhalaLabel">
+        <rdfs:domain rdf:resource="http://example.org/oesel-ontology#EmotionConcept"/>
+        <rdfs:range rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <rdfs:label>hasSinhalaLabel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/oesel-ontology#hasValence -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/oesel-ontology#hasValence">
+        <rdfs:domain rdf:resource="http://example.org/oesel-ontology#EmotionConcept"/>
+        <rdfs:range rdf:resource="http://example.org/oesel-ontology#Valence"/>
+        <rdfs:label>hasValence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/oesel-ontology#isHighVarietyOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/oesel-ontology#isHighVarietyOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://example.org/oesel-ontology#isLowVarietyOf"/>
+        <rdfs:domain rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <rdfs:range rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <rdfs:label>isHighVarietyOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/oesel-ontology#isHypernymOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/oesel-ontology#isHypernymOf">
+        <owl:inverseOf rdf:resource="http://example.org/oesel-ontology#isHyponymOf"/>
+        <rdfs:domain rdf:resource="http://example.org/oesel-ontology#LexicalLabel"/>
+        <rdfs:range rdf:resource="http://example.org/oesel-ontology#LexicalLabel"/>
+        <rdfs:label>isHypernymOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/oesel-ontology#isHyponymOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/oesel-ontology#isHyponymOf">
+        <rdfs:domain rdf:resource="http://example.org/oesel-ontology#LexicalLabel"/>
+        <rdfs:range rdf:resource="http://example.org/oesel-ontology#LexicalLabel"/>
+        <rdfs:label>isHyponymOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/oesel-ontology#isLowVarietyOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/oesel-ontology#isLowVarietyOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <rdfs:range rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <rdfs:label>isLowVarietyOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/oesel-ontology#isSynonymOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/oesel-ontology#isSynonymOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/oesel-ontology#LexicalLabel"/>
+        <rdfs:range rdf:resource="http://example.org/oesel-ontology#LexicalLabel"/>
+        <rdfs:label>isSyonymOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/oesel-ontology#isTranslationOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/oesel-ontology#isTranslationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/oesel-ontology#LexicalLabel"/>
+        <rdfs:range rdf:resource="http://example.org/oesel-ontology#LexicalLabel"/>
+        <rdfs:label>isTranslationOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/oesel-ontology#hasContext -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/oesel-ontology#hasContext">
+        <rdfs:domain rdf:resource="http://example.org/oesel-ontology#LexicalLabel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/oesel-ontology#hasTrigger -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/oesel-ontology#hasTrigger">
+        <rdfs:domain rdf:resource="http://example.org/oesel-ontology#EmotionConcept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/oesel-ontology#Arousal -->
+
+    <owl:Class rdf:about="http://example.org/oesel-ontology#Arousal">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/oesel-ontology#high"/>
+                    <rdf:Description rdf:about="http://example.org/oesel-ontology#low"/>
+                    <rdf:Description rdf:about="http://example.org/oesel-ontology#moderate"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>Arousal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/oesel-ontology#EmotionConcept -->
+
+    <owl:Class rdf:about="http://example.org/oesel-ontology#EmotionConcept">
+        <rdfs:label>Emotion concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/oesel-ontology#EnglishLabel -->
+
+    <owl:Class rdf:about="http://example.org/oesel-ontology#EnglishLabel">
+        <rdfs:subClassOf rdf:resource="http://example.org/oesel-ontology#LexicalLabel"/>
+        <owl:disjointWith rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <rdfs:label>EnglishLabel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/oesel-ontology#Intensity -->
+
+    <owl:Class rdf:about="http://example.org/oesel-ontology#Intensity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/oesel-ontology#high"/>
+                    <rdf:Description rdf:about="http://example.org/oesel-ontology#low"/>
+                    <rdf:Description rdf:about="http://example.org/oesel-ontology#mild"/>
+                    <rdf:Description rdf:about="http://example.org/oesel-ontology#moderate"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>Intensity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/oesel-ontology#LexicalLabel -->
+
+    <owl:Class rdf:about="http://example.org/oesel-ontology#LexicalLabel">
+        <rdfs:label>LexicalLabel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/oesel-ontology#PlutchikPrimaryCategory -->
+
+    <owl:Class rdf:about="http://example.org/oesel-ontology#PlutchikPrimaryCategory">
+        <rdfs:label>PlutchikPrimaryCategory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/oesel-ontology#SinhalaLabel -->
+
+    <owl:Class rdf:about="http://example.org/oesel-ontology#SinhalaLabel">
+        <rdfs:subClassOf rdf:resource="http://example.org/oesel-ontology#LexicalLabel"/>
+        <rdfs:label>SinhalaLabel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/oesel-ontology#Valence -->
+
+    <owl:Class rdf:about="http://example.org/oesel-ontology#Valence">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/oesel-ontology#negative"/>
+                    <rdf:Description rdf:about="http://example.org/oesel-ontology#neutral"/>
+                    <rdf:Description rdf:about="http://example.org/oesel-ontology#positive"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>Valence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/oesel-ontology#aadaraya -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#aadaraya">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isHighVarietyOf rdf:resource="http://example.org/oesel-ontology#aadare"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#aadare"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#love"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">aadaraya</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#aadare -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#aadare">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isLowVarietyOf rdf:resource="http://example.org/oesel-ontology#aadaraya"/>
+        <oesel-ontology:isLowVarietyOf rdf:resource="http://example.org/oesel-ontology#premaya"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#love"/>
+        <oesel-ontology:hasContext>informal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">aadare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#aalaya -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#aalaya">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#pema"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#premaya"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#in_love"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">aalaya</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#aasaawa -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#aasaawa">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#abhilaashaya"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#abhiruchiya"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#kamaththa"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#risi"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#rusi"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#want"/>
+        <oesel-ontology:hasContext>informal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">aasaawa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#abhilaashaya -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#abhilaashaya">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#abhiruchiya"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#kamaththa"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#risi"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#rusi"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#want"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">abhilaashaya</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#abhipraaya -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#abhipraaya">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#apekshaawa"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#atiya"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#hope"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">abhipraaya</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#abhiruchiya -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#abhiruchiya">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#risi"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#rusi"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#want"/>
+        <rdfs:label xml:lang="si">abhiruchiya</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#acceptanceCategory -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#acceptanceCategory">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#PlutchikPrimaryCategory"/>
+        <rdfs:label>acceptanceCategory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#affection -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#affection">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#EnglishLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#enjoy"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#in_love"/>
+        <rdfs:label xml:lang="en">affection</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#alma -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#alma">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#enjoy"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">alma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#amazementCategory -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#amazementCategory">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#PlutchikPrimaryCategory"/>
+        <rdfs:label>amazementCategory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#apekshaawa -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#apekshaawa">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#atiya"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#hope"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">apekshaawa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#atiya -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#atiya">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#hope"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">atiya</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#crave -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#crave">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#EnglishLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#high"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#high"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#desire"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#hope"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#want"/>
+        <rdfs:label xml:lang="si">crave</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#dayaawa -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#dayaawa">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#saadaraya"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#senehasa"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#affection"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">dayaawa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#desire -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#desire">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#EnglishLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#high"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#high"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#thanhaawa"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#thrushnaawa"/>
+        <rdfs:label xml:lang="en">desire</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#desireConcept -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#desireConcept">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#EmotionConcept"/>
+        <oesel-ontology:hasEnglishLabel rdf:resource="http://example.org/oesel-ontology#hope"/>
+        <oesel-ontology:hasEnglishLabel rdf:resource="http://example.org/oesel-ontology#want"/>
+        <oesel-ontology:hasPlutchikPrimaryCategory rdf:resource="http://example.org/oesel-ontology#vigilanceCategory"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#aasaawa"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#abhilaashaya"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#abhiruchiya"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#kamaththa"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#risi"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#rusi"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#thanhaawa"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#thrushnaawa"/>
+        <rdfs:label>desireConcept</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#dola -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#dola">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#neutral"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#crave"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">dola</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#dolanawaa -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#dolanawaa">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#neutral"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#dola"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#crave"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">dolanawaa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#ecstasyCategory -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#ecstasyCategory">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#PlutchikPrimaryCategory"/>
+        <rdfs:label>ecstasyCategory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#enjoy -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#enjoy">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#EnglishLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#in_love"/>
+        <rdfs:label xml:lang="en">enjoy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#felicitous -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#felicitous">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#EnglishLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#sukhitha"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#waasanaawantha"/>
+        <rdfs:label xml:lang="en">felicitous</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#glad -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#glad">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#EnglishLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <rdfs:label xml:lang="en">glad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#griefCategory -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#griefCategory">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#PlutchikPrimaryCategory"/>
+        <rdfs:label>griefCategory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#happyConcept -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#happyConcept">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#EmotionConcept"/>
+        <oesel-ontology:hasEnglishLabel rdf:resource="http://example.org/oesel-ontology#felicitous"/>
+        <oesel-ontology:hasEnglishLabel rdf:resource="http://example.org/oesel-ontology#glad"/>
+        <oesel-ontology:hasEnglishLabel rdf:resource="http://example.org/oesel-ontology#joy"/>
+        <oesel-ontology:hasEnglishLabel rdf:resource="http://example.org/oesel-ontology#well-chosen"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#kulmath"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#muditha"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#preethimath"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#sapa"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#sapawath"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#sukhitha"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#thrupthakara"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#thushta"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#thusnaa"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#thutu"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#waasanaawantha"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#yogya"/>
+        <rdfs:label>happyConcept</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#high -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#high">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#Arousal"/>
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#Intensity"/>
+        <rdfs:label>high</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#hope -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#hope">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#EnglishLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#want"/>
+        <rdfs:label xml:lang="en">hope</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#in_love -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#in_love">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#EnglishLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <rdfs:label xml:lang="en">in_love</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#joy -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#joy">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#EnglishLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#high"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#high"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#felicitous"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#glad"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#well-chosen"/>
+        <rdfs:label xml:lang="en">joy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#kaamaya -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#kaamaya">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#negative"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#sexual_desire"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">kaamaya</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#kamathi -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#kamathi">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#aasaawa"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#abhilaashaya"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#abhiruchiya"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#kamaththa"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#piriya"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#risi"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#rusi"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#want"/>
+        <oesel-ontology:hasContext>informal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">kamathi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#kamaththa -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#kamaththa">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#abhiruchiya"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#risi"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#rusi"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#want"/>
+        <oesel-ontology:hasContext>informal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">kamaththa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#kulmath -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#kulmath">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#preethimath"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#joy"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">kulmath</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#loathingCategory -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#loathingCategory">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#PlutchikPrimaryCategory"/>
+        <rdfs:label>loathingCategory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#loba -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#loba">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#negative"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#thanhaawa"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#lobha"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#thrushnaawa"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#want"/>
+        <oesel-ontology:hasContext>religious</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">loba</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#lobha -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#lobha">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#high"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#negative"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#thanhaawa"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#thrushnaawa"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#want"/>
+        <oesel-ontology:hasContext>religious</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">lobha</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#love -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#love">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#EnglishLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#aadaraya"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#aadare"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#premaya"/>
+        <rdfs:label>love</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#loveConcept -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#loveConcept">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#EmotionConcept"/>
+        <oesel-ontology:hasEnglishLabel rdf:resource="http://example.org/oesel-ontology#affection"/>
+        <oesel-ontology:hasEnglishLabel rdf:resource="http://example.org/oesel-ontology#enjoy"/>
+        <oesel-ontology:hasEnglishLabel rdf:resource="http://example.org/oesel-ontology#in_love"/>
+        <oesel-ontology:hasEnglishLabel rdf:resource="http://example.org/oesel-ontology#love"/>
+        <oesel-ontology:hasEnglishLabel rdf:resource="http://example.org/oesel-ontology#regard"/>
+        <oesel-ontology:hasEnglishLabel rdf:resource="http://example.org/oesel-ontology#sexual_desire"/>
+        <oesel-ontology:hasPlutchikPrimaryCategory rdf:resource="http://example.org/oesel-ontology#acceptanceCategory"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#aadaraya"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#aadare"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#alma"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#dayaawa"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#maithriya"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#nuraa"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#pema"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#premaya"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#rathi"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#saadaraya"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#senehasa"/>
+        <oesel-ontology:hasSinhalaLabel rdf:resource="http://example.org/oesel-ontology#shrungaara"/>
+        <rdfs:label>loveConcept</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#low -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#low">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#Arousal"/>
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#Intensity"/>
+        <rdfs:label>low</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#maithriya -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#maithriya">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:hasContext>religious</oesel-ontology:hasContext>
+        <rdfs:comment xml:lang="si">maithriya</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#manadola -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#manadola">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#neutral"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#dola"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#dolanawaa"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#crave"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">manadola</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#mild -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#mild">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#Intensity"/>
+        <rdfs:label>mild</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#moderate -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#moderate">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#Arousal"/>
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#Intensity"/>
+        <rdfs:label>moderate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#muditha -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#muditha">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:hasContext>religious, formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">muditha</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#negative -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#negative">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#Valence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#neutral -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#neutral">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#Valence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#nuraa -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#nuraa">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#sexual_desire"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">nuraa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#pema -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#pema">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#in_love"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">pema</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#piriya -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#piriya">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#aasaawa"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#abhilaashaya"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#abhiruchiya"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#kamaththa"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#risi"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#rusi"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#want"/>
+        <oesel-ontology:hasContext>informal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">piriya</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#positive -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#positive">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#Valence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#preethimath -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#preethimath">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#high"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#high"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">preethimath</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#premaya -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#premaya">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isHighVarietyOf rdf:resource="http://example.org/oesel-ontology#aadare"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#aadaraya"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#aadare"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#love"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">premaya</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#priya -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#priya">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#alma"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#enjoy"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">priya</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#rageCategory -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#rageCategory">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#PlutchikPrimaryCategory"/>
+        <rdfs:label>rageCategory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#rathi -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#rathi">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#negative"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#nuraa"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#sexual_desire"/>
+        <oesel-ontology:hasContext>formal, religious</oesel-ontology:hasContext>
+        <rdfs:comment xml:lang="si">rathi</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#regard -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#regard">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#EnglishLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#affection"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#enjoy"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#in_love"/>
+        <rdfs:label xml:lang="en">regard</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#risi -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#risi">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#rusi"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#want"/>
+        <rdfs:label xml:lang="si">risi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#rusi -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#rusi">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#want"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">rusi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#saadaraya -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#saadaraya">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#affection"/>
+        <rdfs:label xml:lang="si">saadaraya</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#sapa -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#sapa">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#sapawath"/>
+        <rdfs:label xml:lang="si">sapa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#sapawath -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#sapawath">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <rdfs:label xml:lang="si">sapawath</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#senehasa -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#senehasa">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#saadaraya"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#affection"/>
+        <rdfs:label xml:lang="si">senehasa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#sexual_desire -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#sexual_desire">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#EnglishLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#affection"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#enjoy"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#in_love"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#regard"/>
+        <rdfs:label xml:lang="en">sexual_desire</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#shrungaara -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#shrungaara">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#nuraa"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#rathi"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#sexual_desire"/>
+        <rdfs:comment xml:lang="si">shrungaara</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#snehaya -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#snehaya">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#dayaawa"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#saadaraya"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#senehasa"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#affection"/>
+        <rdfs:comment xml:lang="si">snehaya</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#sukhitha -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#sukhitha">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#waasanaawantha"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">sukhitha</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#terrorCategory -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#terrorCategory">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#PlutchikPrimaryCategory"/>
+        <rdfs:label>terrorCategory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#thanhaawa -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#thanhaawa">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#high"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#negative"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#desire"/>
+        <oesel-ontology:hasContext>religious</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">thanhaawa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#thrupthakara -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#thrupthakara">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#glad"/>
+        <rdfs:label xml:lang="si">thrupthakara</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#thrushnaawa -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#thrushnaawa">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#high"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#high"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#negative"/>
+        <oesel-ontology:isHighVarietyOf rdf:resource="http://example.org/oesel-ontology#thanhaawa"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#thanhaawa"/>
+        <oesel-ontology:hasContext>religious</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">thrushnaawa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#thushta -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#thushta">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#thrupthakara"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#thutu"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#glad"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">thushta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#thusnaa -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#thusnaa">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#kulmath"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#preethimath"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#joy"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">thusnaa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#thutu -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#thutu">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#thrupthakara"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#glad"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">thutu</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#vigilanceCategory -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#vigilanceCategory">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#PlutchikPrimaryCategory"/>
+        <rdfs:label>vigilanceCategory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#waasanaawantha -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#waasanaawantha">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#moderate"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <rdfs:label xml:lang="si">waasanaawantha</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#want -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#want">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#EnglishLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#desire"/>
+        <oesel-ontology:isSynonymOf rdf:resource="http://example.org/oesel-ontology#hope"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#thanhaawa"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#thrushnaawa"/>
+        <rdfs:label xml:lang="en">want</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#well-chosen -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#well-chosen">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#EnglishLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <rdfs:label xml:lang="en">well-chosen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/oesel-ontology#yogya -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/oesel-ontology#yogya">
+        <rdf:type rdf:resource="http://example.org/oesel-ontology#SinhalaLabel"/>
+        <oesel-ontology:hasArousal rdf:resource="http://example.org/oesel-ontology#low"/>
+        <oesel-ontology:hasIntensity rdf:resource="http://example.org/oesel-ontology#mild"/>
+        <oesel-ontology:hasValence rdf:resource="http://example.org/oesel-ontology#positive"/>
+        <oesel-ontology:isTranslationOf rdf:resource="http://example.org/oesel-ontology#well-chosen"/>
+        <oesel-ontology:hasContext>formal</oesel-ontology:hasContext>
+        <rdfs:label xml:lang="si">yogya</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdfs:label>Amazement</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
